@@ -38,10 +38,6 @@ li {
 
 .main-link {
     display: inline-block;
-
-}
-
-.main-link {
     padding: 15px 50px;
     border: 1px solid var(--main-orange);
     background-color: var(--main-orange);
@@ -65,9 +61,19 @@ li {
     font-size: 16px;
 }
 
+.header {
+    width: 100vw;
+    position: relative;
+}
+
 .nav-bar {
-    padding: 15px;
+    padding: 15px 0;
     background-color: var(--light-orange);
+    max-width: 100%;
+}
+
+.mobile-menu-bars {
+    display: none;
 }
 
 .nav-bar .container {
@@ -119,6 +125,53 @@ li {
     background-color: #fff;
     color: var(--main-orange);
 }
+
+.nav-items-mobile {
+    display: none;
+    width: 90%;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+    padding: 15px;
+    background-color: var(--light-orange);
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease .3s;
+}
+
+.nav-items-mobile .nav-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #ffc2a8;
+}
+
+.nav-items-mobile .nav-item.close {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items-mobile .nav-item.close .close {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-items-mobile .nav-item.close .close i {
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.nav-items-mobile .nav-item:last-child {
+    border-bottom: none;
+}
+
+.nav-items-mobile .nav-item .item-link {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    color: var(--text-color);
+}
+
 
 .hero-section {
     padding: 50px 0;
@@ -193,4 +246,151 @@ li {
 
 .footer-wrapper .footer-info:last-child {
     margin-top: 15px;
+}
+
+@media only screen and ( max-width: 600px ) {
+    
+    .container {
+        width: 90%;
+    }
+
+    .main-link {
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .nav-bar {
+        padding: 10px 0;
+    }
+    
+    .nav-bar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-bar .logo-container {
+        width: 150px;
+    }
+
+    .nav-bar .nav-items {
+        display: none;
+    }
+
+    .mobile-menu-bars {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-bars i {
+        font-size: 30px;
+        color: var(--text-color);
+    }
+
+    .nav-bar .nav-items .nav-item {
+        margin-right: 25px;
+
+    }
+    .nav-bar .nav-items .nav-item:last-child {
+        margin-right: 0;
+    }
+    .nav-bar .nav-items .nav-item .item-link {
+        color: var(--text-color);
+        transition: all ease-in .3s;
+    }
+
+    .nav-bar .nav-items .nav-item .item-link:hover {
+        color: var(--main-orange);
+    }
+
+    .nav-bar .nav-items .nav-item .item-link.btn-login {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 1px solid var(--main-orange);
+        background-color: var(--main-orange);
+        color: #fff;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+    .nav-bar .nav-items .nav-item .item-link.btn-login:hover {
+        background-color: #fff;
+        color: var(--main-orange);
+    }
+
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-section .hero-wrapper {
+        flex-direction: column;
+        padding: 0 ;
+    }
+
+    .hero-section .hero-wrapper .content-wrapper .hero-title {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .hero-section .hero-wrapper .content-wrapper .hero-description {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .hero-section .hero-wrapper .hero-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about {
+        padding-bottom: 25px;
+    }
+
+    .about .cards-wrapper {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .about .cards-wrapper .card {
+        flex: 1;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .about .cards-wrapper .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .about .cards-wrapper .card .card-icon {
+        width: 40px;
+    }
+
+    .about .cards-wrapper .card .card-title {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+
+    .footer {
+        padding-bottom: 25px;
+    }
+
+    .footer-wrapper {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .footer-wrapper .section-title {
+        margin-bottom: 20px;
+    }
+
+    .footer-wrapper .footer-info:last-child {
+        margin-top: 15px;
+    }
+
 }

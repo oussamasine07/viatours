@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30a7946fd8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Viatours | Page Accueil </title>
 </head>
@@ -21,8 +22,24 @@
                     <li class="nav-item"><a href="#" class="item-link">Cree un compte</a></li>
                     <li class="nav-item"><a href="#" class="item-link btn-login">Se connectez</a></li>
                 </ul>
+                <button class="mobile-menu-bars" id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </nav>
+
+        <ul class="nav-items-mobile" id="menu-list">
+            <li class="nav-item close">
+                <button class="close" id="close-list">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li class="nav-item"><a href="#" class="item-link">Destinations</a></li>
+            <li class="nav-item"><a href="#" class="item-link">Activités</a></li>
+            <li class="nav-item"><a href="#" class="item-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="item-link">Cree un compte</a></li>
+            <li class="nav-item"><a href="#" class="item-link btn-login">Se connectez</a></li>
+        </ul>
 
         <div class="hero-section">
             <div class="container">
@@ -75,5 +92,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
