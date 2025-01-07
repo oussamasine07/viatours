@@ -17,7 +17,7 @@ menuClose.addEventListener("click", () => {
     menuList.style.top = "50px";
     menuList.style.opacity = "0";
 
-    console.log("testing merge")
+    console.log("conflict merge")
 
     setTimeout(() => {
         menuList.style.display = "none";
