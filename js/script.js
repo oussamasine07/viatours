@@ -19,8 +19,8 @@ menuClose.addEventListener("click", () => {
 
     console.log("conflict merge")
 
-    console.log("feature 2")
-
+    console.log("feature 2jhkjhdbh")
+    
     setTimeout(() => {
         menuList.style.display = "none";
     }, 100);
