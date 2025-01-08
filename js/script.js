@@ -19,6 +19,8 @@ menuClose.addEventListener("click", () => {
 
     
 
+    console.log("feature 2")
+
     setTimeout(() => {
         menuList.style.display = "none";
     }, 100);
