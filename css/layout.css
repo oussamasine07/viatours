@@ -7,7 +7,8 @@
 :root {
     --light-orange: #FDF0EA;
     --secondary-orange: #F28555;
-    --main-orange: #EB662B;
+    /* --main-orange: #EB662B; */
+    --main-orange: #913c00;
     --text-color: #05073C;
 }
 
@@ -116,8 +117,10 @@ li {
     border: 1px solid var(--main-orange);
     background-color: var(--main-orange);
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .nav-bar .nav-items .nav-item .item-link.btn-login:hover {
@@ -313,7 +316,7 @@ li {
         border: 1px solid var(--main-orange);
         background-color: var(--main-orange);
         color: #fff;
-        font-weight: 400;
+        font-weight: 500;
         border-radius: 5px;
     }
 
