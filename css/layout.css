@@ -227,6 +227,16 @@ li {
     background-image: url("../images/banner/banner-land.jpg");
 }
 
+.btn-md {
+    display: block;
+    padding: 5px 15px ;
+    border: 1px solid var(--main-orange);
+    border-radius: 10px;
+    background-color: var(--main-orange);
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
 
 .footer {
     padding: 50px 0;
