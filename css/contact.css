@@ -17,7 +17,6 @@
 .contact-section .contact-wrapper .contact-info,
 .contact-section .contact-wrapper .contact-form {
     flex:1;
-    border: 1px solid black;
 }
 
 .contact-section .contact-wrapper .contact-info .info-details{
@@ -31,7 +30,6 @@
 }
 
 .contact-section .contact-wrapper .contact-info .social-media{
-    border: 1px solid black;
     text-align: center;
     margin-top: 20px;
 }
@@ -92,4 +90,13 @@
 .contact-section .contact-wrapper .contact-form .form .form-group .btn-form:hover{
     background-color: #fff;
     color: var(--main-orange);
+}
+
+@media only screen and (max-width:600px){
+    .contact-section .contact-wrapper{
+        flex-direction: column-reverse;
+    }
+    .contact-section .contact-wrapper .contact-form{
+        margin-bottom: 30px;
+    }
 }
