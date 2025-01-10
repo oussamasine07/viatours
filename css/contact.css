@@ -92,6 +92,16 @@
     color: var(--main-orange);
 }
 
+.map-section {
+    margin-bottom: 50px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
 @media only screen and (max-width:600px){
     .contact-section .contact-wrapper{
         flex-direction: column-reverse;
