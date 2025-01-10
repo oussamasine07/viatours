@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-orange: #FDF0EA;
+    --secondary-orange: #F28555;
+    --main-orange: #EB662B;
+    --text-color: #05073C;
+}
+
+
+.login-section {
+    padding: 50px 0;
+} 
+
+.login-section .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section .form-wrapper .form {
+    width: 40%;
+    text-align: center;
+}
+
+.login-section .form-wrapper .form .section-title {
+    margin-bottom: 20px;
+}
+
+.login-section .form-wrapper .form .input-group {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.login-section .form-wrapper .form .input-group .input-form,
+.login-section .form-wrapper .form .input-group .submit-btn {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.login-section .form-wrapper .form .input-group .input-form {
+    border: none;
+    background-color: var(--light-orange);
+    
+}
+
+.login-section .form-wrapper .form .input-group .input-form:focus {
+    outline: none;
+}
+
+.login-section .form-wrapper .form .input-group .submit-btn {
+    border: 1px solid var(--main-orange);
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--main-orange);
+    cursor: pointer;
+    transition: all ease .3s;
+    margin-bottom: 20px;
+}
+
+.login-section .form-wrapper .form .input-group .submit-btn:hover {
+    background-color: #fff;
+    color: var(--main-orange);
+}
+
+.login-section .form-wrapper .form .input-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-section .form-wrapper .form .input-info .remeber-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.login-section .form-wrapper .form .input-info .remeber-me .remeber-text,
+.login-section .form-wrapper .form .input-info .remeber-me .remeber-link {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.login-section .form-wrapper .form .input-info .remeber-me .remeber-link {
+    color: var(--text-color);
+    transition: all ease .3s;
+}
+
+.login-section .form-wrapper .form .input-info .remeber-me .remeber-link:hover {
+    color: var(--secondary-orange);
+}
+
+.login-section .form-wrapper .form .input-info .remeber-me .remeber-text.mr-left-none {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 600px){
+    input[type="text"],[type="password"],[type="email"],[type="submit"]{
+        width:400px;
+        height: 50px;
+        margin: 10px -17px;   
+    }
+
+    .remembre{
+       text-align: left;
+      
+    }
+    .container {
+        width: 90%;
+    }
+
+    .main-link {
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .nav-bar {
+        padding: 10px 0;
+    }
+    
+    .nav-bar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-bar .logo-container {
+        width: 150px;
+    }
+
+    .nav-bar .nav-items {
+        display: none;
+    }
+
+    .mobile-menu-bars {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-bars i {
+        font-size: 30px;
+        color: var(--text-color);
+    }
+
+    .nav-bar .nav-items .nav-item {
+        margin-right: 25px;
+
+    }
+    .nav-bar .nav-items .nav-item:last-child {
+        margin-right: 0;
+    }
+    .nav-bar .nav-items .nav-item .item-link {
+        color: var(--text-color);
+        transition: all ease-in .3s;
+    }
+
+    .nav-bar .nav-items .nav-item .item-link:hover {
+        color: var(--main-orange);
+    }
+
+    .nav-bar .nav-items .nav-item .item-link.btn-login {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 1px solid var(--main-orange);
+        background-color: var(--main-orange);
+        color: #fff;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+    .nav-bar .nav-items .nav-item .item-link.btn-login:hover {
+        background-color: #fff;
+        color: var(--main-orange);
+    }
+
+    .footer {
+        padding-bottom: 25px;
+    }
+
+    .footer-wrapper {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .footer-wrapper .section-title {
+        margin-bottom: 20px;
+    }
+
+    .footer-wrapper .footer-info:last-child {
+        margin-top: 15px;
+    }
+}
