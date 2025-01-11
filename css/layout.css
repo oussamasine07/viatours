@@ -291,7 +291,7 @@ li {
     }
 
     .nav-bar {
-        padding: 10px 0;
+        padding: 20px 0;
     }
     
     .nav-bar .container {
@@ -349,6 +349,19 @@ li {
     .nav-bar .nav-items .nav-item .item-link.btn-login:hover {
         background-color: #fff;
         color: var(--main-orange);
+    }
+ 
+    .banner-section {
+        padding: 30px 0;
+    }
+
+    .banner-section .banner-wrapper {
+        padding: 60px 30px;
+        border-radius: 15px;
+    }
+
+    .banner-section .banner-wrapper .banner-title {
+        font-size: 35px;
     }
 
     .footer {
