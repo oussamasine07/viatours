@@ -1,8 +1,8 @@
 :root {
-    --light-orange: #FDF0EA;
-    --secondary-orange: #F28555;
-    --main-orange: #EB662B;
-    --text-color: #05073C;
+    --light-orange: #F8E6E1; /* Soft, warm light peach for backgrounds */
+    --secondary-orange: #f75231;  /* Darker reddish-orange for accents */
+    --main-orange: #B33A28; /* Deep, bold reddish-orange for primary elements */
+    --text-color: #05073C; /* Almost black for excellent readability */
 }
 
 .contact-section{
