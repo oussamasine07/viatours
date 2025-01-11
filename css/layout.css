@@ -4,12 +4,28 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --light-orange: #FDF0EA;
     --secondary-orange: #F28555;
-    /* --main-orange: #EB662B; */
+    --main-orange: #EB662B;
     --main-orange: #913c00;
+    --main-orange: #EB662B;
+    --main-orange: #db3308;
     --text-color: #05073C;
+} */
+/* 
+:root {
+    --light-orange: #FFF5EF; Slightly darker for better contrast with text 
+    --secondary-orange: #EB662B;  More muted for contrast with light background 
+    --main-orange: #C14E1B;  Darker orange for better legibility 
+    --text-color: #031128;  Slightly lighter than pure black to reduce strain 
+}*/
+:root {
+    --light-orange: #F8E6E1; /* Soft, warm light peach for backgrounds */
+    /* --secondary-orange: #f0755c; Darker reddish-orange for accents */
+    --secondary-orange: #f75231;  /* Darker reddish-orange for accents */
+    --main-orange: #B33A28; /* Deep, bold reddish-orange for primary elements */
+    --text-color: #1F1F1F; /* Almost black for excellent readability */
 }
 
 html {
@@ -34,7 +50,7 @@ li {
 }
 
 .text-orange {
-    color: var(--main-orange);
+    color: var(--secondary-orange);
 }
 
 .main-link {
