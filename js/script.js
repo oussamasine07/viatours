@@ -8,7 +8,7 @@ menuBtn.addEventListener("click", () => {
     
     setTimeout(() => {
         menuList.style.opacity = "1";
-        menuList.style.top = "70px";
+        menuList.style.top = "80px";
     }, 100);
 });
 
