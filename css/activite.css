@@ -31,6 +31,7 @@
     border-bottom-right-radius: 15px;
 }
 
+
 .nos-activite .activities-cards .activity-card .activity-card-description .activity-title {
     font-size: 20px;
     text-transform: capitalize;
@@ -40,6 +41,17 @@
     margin: 15px 0;
     font-size: 16px;
 }
+.nos-activite .activities-cards .activity-card .activity-card-description .btn-md {
+    width: 150px;
+    text-align: center;
+    transition: all ease .3s;
+}
+
+.nos-activite .activities-cards .activity-card .activity-card-description .btn-md:hover {
+    background-color: #fff;
+    color: var(--main-orange);
+}
+
 
 @media only screen and ( max-width: 600px ) {
     .nos-activite .activities-cards {
