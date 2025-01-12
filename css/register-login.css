@@ -103,100 +103,12 @@
 }
 
 @media screen and (max-width: 600px){
-    input[type="text"],[type="password"],[type="email"],[type="submit"]{
-        width:400px;
-        height: 50px;
-        margin: 10px -17px;   
-    }
+        
+    .login-section {
+        padding: 30px 0;
+    } 
 
-    .remembre{
-       text-align: left;
-      
-    }
-    .container {
-        width: 90%;
-    }
-
-    .main-link {
-        padding: 10px 25px;
-        font-size: 18px;
-    }
-
-    .section-title {
-        font-size: 25px;
-    }
-    
-    .nav-bar .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .nav-bar .logo-container {
-        width: 150px;
-    }
-
-    .nav-bar .nav-items {
-        display: none;
-    }
-
-    .mobile-menu-bars {
-        display: block;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu-bars i {
-        font-size: 30px;
-        color: var(--text-color);
-    }
-
-    .nav-bar .nav-items .nav-item {
-        margin-right: 25px;
-
-    }
-    .nav-bar .nav-items .nav-item:last-child {
-        margin-right: 0;
-    }
-    .nav-bar .nav-items .nav-item .item-link {
-        color: var(--text-color);
-        transition: all ease-in .3s;
-    }
-
-    .nav-bar .nav-items .nav-item .item-link:hover {
-        color: var(--main-orange);
-    }
-
-    .nav-bar .nav-items .nav-item .item-link.btn-login {
-        display: inline-block;
-        padding: 10px 15px;
-        border: 1px solid var(--main-orange);
-        background-color: var(--main-orange);
-        color: #fff;
-        font-weight: 400;
-        border-radius: 5px;
-    }
-
-    .nav-bar .nav-items .nav-item .item-link.btn-login:hover {
-        background-color: #fff;
-        color: var(--main-orange);
-    }
-
-    .footer {
-        padding-bottom: 25px;
-    }
-
-    .footer-wrapper {
-        padding: 15px;
-        border-radius: 8px;
-    }
-
-    .footer-wrapper .section-title {
-        margin-bottom: 20px;
-    }
-
-    .footer-wrapper .footer-info:last-child {
-        margin-top: 15px;
+    .login-section .form-wrapper .form {
+        width: 100%;
     }
 }
