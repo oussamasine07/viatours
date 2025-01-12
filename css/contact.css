@@ -9,6 +9,10 @@
     margin-bottom:50px;
 }
 
+.contact-section .container .section-title{
+    margin-bottom: 20px;
+}
+
 .contact-section .contact-wrapper{
     display: flex;
 
